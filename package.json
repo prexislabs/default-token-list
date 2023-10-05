@@ -5,7 +5,7 @@
   "license": "GPL-3.0-or-later",
   "scripts": {
     "test": "mocha",
-    "build": "mkdir -p build && node src/write.js > build/tokens.json && cp _redirects build/"
+    "build": "mkdir -p build && node src/write.js > build/tokens.json && cp _redirects build/ && mkdir -p build/images && cp images/* build/images/"
   },
   "files": [
     "build/tokens.json"
